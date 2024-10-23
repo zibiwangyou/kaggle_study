@@ -8,7 +8,7 @@ def process():
     print(df.shape)
 
     # 缺失值统计：
-    na_count = df.apply(lambda x: sum(x.isnull()/len(x)), axis=0)
+    na_count = df.apply(lambda x: sum(x.isnull())/len(x), axis=0)
     print(na_count)
 
 

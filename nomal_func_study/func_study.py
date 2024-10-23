@@ -35,6 +35,10 @@ def filter_study():
     list1_ou = filter(lambda x: x % 2 == 0, list1)
     print(list(list1_ou))
 
+    # 筛选出列表中大于3的元素：
+    list_big = filter(lambda x: x > 3, list1)
+    print(list(list_big))
+
 
 def lambda_study():
     # 简单举例:
@@ -80,5 +84,5 @@ def dataframe_apply_study():
 if __name__ == '__main__':
     # lambda_study()
     # map_study()
-    # filter_study()
-    dataframe_apply_study()
+    filter_study()
+    # dataframe_apply_study()
