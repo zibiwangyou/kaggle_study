@@ -6,7 +6,7 @@
 import pandas as pd
 
 
-def process():
+def process_data_clean():
     path = r'../files/data.csv'
     df = pd.read_csv(path, encoding='ISO-8859-1', dtype={'CustomerID': str})
 
@@ -72,5 +72,9 @@ def process():
     writer._save()
 
 
+def process_rfm():
+    pass
+
+
 if __name__ == '__main__':
-    process()
+    process_data_clean()
